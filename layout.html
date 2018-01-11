@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-	<title>American Football</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+{% block head %}
+<title>Flaskr</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 
-	<style>
+  <style>
 ul {
     list-style-type: none;
     margin: 0;
@@ -33,9 +34,11 @@ li a:hover:not(.active) {
     background-color: #DB0B0B;
 }
 </style>
+{% endblock %}
 </head>
-<body>
 
+<body>
+{% block navbar %}
 <ul>
   <li><a class="active" href="#home">Home</a></li>
   <li><a href="#news">News</a></li>
@@ -44,6 +47,11 @@ li a:hover:not(.active) {
   <li><a href="http://www.nfl.com/fantasyfootball">NFL Fantasy League</a></li>
   <li><img src="nfl-logo.jpg" alt="NFL logo" style="width:50px;height:40px;"></li>
 </ul>
+{% endblock %}
+<div id="content">
+  {% block content %}{% endblock %}
+</div>
 
 </body>
+
 </html>
