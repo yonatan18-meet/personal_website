@@ -6,70 +6,75 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <style>
 	body {font-family: "Lato", sans-serif}
-	.mySlides {display: none}
 	body,h1,h5 {font-family: "Raleway", sans-serif}
 	body, html {height: 100%}
+	footer {
+	height: 300px;
+	width: 100%;
+	background: url(img1.jpg);
+	background-repeat: no-repeat;
+	background-position: middle;
+	background-size: 100% 100%;
+}
 </style>
 <body>
+
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
     <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
     <a href="#festival" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FESTIVALS</a>
     <a href="#best" class="w3-bar-item w3-button w3-padding-large w3-hide-small">THE BEST</a>
     <a href="#gallery" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GALLERY</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red  w3-right"><i class="fas fa-utensils w3-large"></i></a>
   </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large">ABOUT</a>
+  <a href="#festival" class="w3-bar-item w3-button w3-padding-large">FESTIVALS</a>
+  <a href="#best" class="w3-bar-item w3-button w3-padding-large">THE BEST</a>
+  <a href="#gallery" class="w3-bar-item w3-button w3-padding-large">GALLERY</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
 </div>
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-  <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
+  <!-- Home page content -->
+  <div class="w3-display-container w3-center" id="home">
     <img src="steak7.jpg" style="width:100%; height:615px">
+    <div class="w3-display-middle w3-container w3-text-white w3-padding-32 w3-hide-small">
+    <h5 class="w3-jumbo w3-animate-top">JUST MEAT</h5>
+    <hr class="w3-border-white" style="margin:auto;width:40%">
+    <p class="w3-large w3-center"><i class="fas fa-quote-left" style="width:12px"></i> Meat isn't murder, it's delicious <i class="fas fa-quote-right" style="width:12px"></i><br> ~ John (Rotten) Lydon </p>   
+    </div>
   </div>
-
-  <div class="mySlides w3-display-container w3-center">
-    <img src="steak7.jpg" style="width:100%; height:615px">  
-  </div>
-
-  <div class="mySlides w3-display-container w3-center">
-    <img src="steak7.jpg" style="width:100%; height:615px"> 
-  </div>
-
-  <div class="mySlides w3-display-container w3-center">
-    <img src="steak7.jpg" style="width:100%; height:615px"> 
-  </div>
-
 
 
   <!-- The About Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
-    <h2 class="w3-wide">ABOUT</h2>
-    <p class="w3-opacity"><i>We love meat</i></p>
-    <p class="w3-justify">hbcytytc</p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
+ <div class="w3-row-padding w3-display-container w3-content" id="about">
+    <div class="w3-col l4 m7">
+    <br>
+      <h2 class="w3-wide">ABOUT</h2>
+      <p class="w3-opacity"><i>We love meat</i></p>
+      <p class="w3-justify">Meat is animal flesh that is eaten as food. Humans have hunted and killed animals for meat since prehistoric times. The advent of civilization allowed the domestication of animals such as chickens, sheep, rabbits, pigs and cattle. <br>
+      Meat is mainly composed of water, protein, and fat. It is edible raw, but is normally eaten after it has been cooked.<br>
+      Meat is important in economy and culture, even though its mass production and consumption has been determined to pose risks for human health and the environment. Many religions have rules about which meat may or may not be eaten, and vegetarian people abstain from eating meat because of concerns about the ethics of eating meat or about the effects of meat production or consumption.</p> <br>
+    </div>
+    <div class="w3-col l8 m5 w3-padding w3-display-right">
+      <img src="cuts.jpg" style="width:120%; height:50%">
     </div>
   </div>
+
 
   <!-- The Festival Section -->
   <div class="w3-black" id="festival">
@@ -88,40 +93,43 @@
 
 
   <!-- The Best Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="best">
-    <h2 class="w3-wide">THE BEST</h2>
-    <p class="w3-opacity"><i>Meat from heaven</i></p>
-    <p class="w3-justify">hbcytytc</p>
-    <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-          <img src="restaurant4.jpg" alt="Wadakin, Osaka" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-black">
-            <p><b>Wadakin, Osaka</b></p>
-            <p class="w3-opacity">1878 Nakamachi, Matsusaka</p>
-            <p class="w3-justify">This extraordinary, melt-on-the-tongue steak, cooked over a hibachi grill, has unrivalled sweetness and tenderness and is so heavily marbled it resembles lardo.</p>
-            <button class="w3-button w3-white w3-margin-bottom" onclick="document.getElementById('orderingModal').style.display='block'">Order a table</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="restaurant2.jpg" alt="La Cabaña, Buenos Aires" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-black">
-            <p><b>La Cabana, Buenos Aires</b></p>
-            <p class="w3-opacity">Avenida Alicaia Moreau de Justo 380, Buenos Aires</p>
-            <p class="w3-justify">BA's most famous steakhouse combines those two most potent ingredients: A-grade beef and A-list stars. Everyone who's anyone has signed La Cabana's visitors' book - every Argentine president since the restaurant's inception.</p>
-            <button class="w3-button w3-white w3-margin-bottom" onclick="document.getElementById('orderingModal').style.display='block'">Order a table</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="restaurant3.jpg" alt="Longview Steakhouse, Alberta" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-black">
-            <p><b>Longview Steakhouse, Alberta</b></p>
-            <p class="w3-opacity">102 Morrison Road, <br>Longview, Alberta</p>
-            <p class="w3-justify">The Alberta AAA filet mignon, three inches thick and seared on both sides, comes topped with a demi-glace and freshly made hollandaise. For the cowboy in you.</p>
-            <button class="w3-button w3-white w3-margin-bottom" onclick="document.getElementById('orderingModal').style.display='block'">Order a table</button>
-          </div>
-        </div>
+<div class="w3-container w3-row-padding w3-padding-16" id="best">
+    <h2 class="w3-wide w3-center">THE BEST</h2>
+    <p class="w3-opacity w3-center"><i>Meat from heaven</i></p>
+    <p class="w3-justify w3-content w3-center">These are only 3 of many more restaurants with spectactular meat dishes!</p>
+    <br>
+    <div class="w3-third w3-margin-bottom">
+      <img src="restaurant4.jpg" alt="Wadakin, Osaka" style="width:100%">
+      <div class="w3-container w3-black">
+        <p><b>Wadakin, Osaka</b></p>
+        <p class="w3-opacity">1878 Nakamachi, Matsusaka</p>
+        <p class="w3-justify">This extraordinary, melt-on-the-tongue steak, cooked over a hibachi grill, has unrivalled sweetness and tenderness and is so heavily marbled it resembles lardo.</p>
+        <p class="w3-large"><i class="far fa-credit-card"></i> <i class="fa fa-wifi"></i> <i class="fab fa-accessible-icon"></i> <i class="fas fa-glass-martini"></i></p>
+        <button class="w3-button w3-block w3-white w3-margin-bottom" onclick="document.getElementById('orderingModal').style.display='block'">Order a table</button>
       </div>
-  </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="restaurant2.jpg" alt="La Cabaña, Buenos Aires" style="width:100%">
+      <div class="w3-container w3-black">
+        <p><b>La Cabana, Buenos Aires</b></p>
+        <p class="w3-opacity">Avenida Alicaia Moreau de Justo 380, Buenos Aires</p>
+        <p class="w3-justify">BA's most famous steakhouse combines those two most potent ingredients: A-grade beef and A-list stars. Everyone who's anyone has signed La Cabana's visitors' book.</p>
+        <p class="w3-large"><i class="far fa-credit-card"></i> <i class="fa fa-wifi"></i> <i class="fas fa-glass-martini"></i></p>
+        <button class="w3-button w3-block w3-white w3-margin-bottom" onclick="document.getElementById('orderingModal').style.display='block'">Order a table</button>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="restaurant3.jpg" alt="Longview Steakhouse, Alberta" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-black">
+        <p><b>Longview Steakhouse, Alberta</b></p>
+        <p class="w3-opacity">102 Morrison Road, Longview, Alberta<p>
+        <p class="w3-justify">The Alberta AAA filet mignon, three inches thick and seared on both sides, comes topped with a demi-glace and freshly made hollandaise. For the cowboy in you.</p>
+        <p class="w3-large"><i class="far fa-credit-card"></i> <i class="fa fa-wifi"></i> <i class="fab fa-accessible-icon"></i></p>
+        <button class="w3-button w3-block w3-white w3-margin-bottom" onclick="document.getElementById('orderingModal').style.display='block'">Order a table</button>
+      </div>
+    </div>
+</div>
+
 
    <!-- Ordering Modal -->
 <div id="orderingModal" class="w3-modal">
@@ -137,21 +145,67 @@
         <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people?" required name="People"></p>
         <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2018-02-16T20:30"></p>
         <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-        <p><button class="w3-button" type="submit">SEND MESSAGE</button></p>
+         <p>We accept: <i class="fa fa-credit-card w3-large"></i> <i class="fab fa-cc-mastercard w3-large"></i> <i class="fab fa-cc-amex w3-large"></i> <i class="fab fa-cc-visa w3-large"></i> <i class="fab fa-cc-paypal w3-large"></i></p>
+         <br>
+        <p><button class="w3-button w3-black w3-display-bottomright w3-margin-bottom w3-margin-right" type="submit" onclick="alert('Thank you, your reservation has been submited')">SEND MESSAGE</button></p>
       </form>
     </div>
   </div>
 </div>
 
 
+<!-- Gallery Content -->
+  <div class="w3-container w3-content w3-center w3-padding-64 w3-black" style="max-width:100%" id="gallery">
+  	<h2 class="w3-wide">GALLERY</h2>
+    <p class="w3-opacity"><i>Just a few ideas for your next dish</i></p>
+  </div>
+  <div class="w3-row-padding w3-padding-16 w3-text-white w3-black w3-large">
+    <div class="w3-half w3-margin-bottom">
+      <div class="w3-display-container">
+        <img src="steak.jpg" alt="Ribeye Steak" style="width:100%; height: 442px">
+        <span class="w3-display-bottomleft w3-padding">Ribeye Steak</span>
+      </div>
+    </div>
+    <div class="w3-half">
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="steak6.jpg" alt="T-Bone Steak" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">T-Bone Steak</span>
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="img4.jpg" alt="Beef Strips" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">Strips of beef with broccoli</span>
+          </div>
+        </div>
+      </div>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="img3.jpg" alt="Carne Asada" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">Carne Asada</span>
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="steak5.jpg" alt="BBQ Brisket" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">BBQ Brisket with pesto</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <!-- The Contact Section -->
-  <div class="w3-black" id="contact">
+<div class="w3-white" id="contact">
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
     <h2 class="w3-wide w3-center">CONTACT</h2>
     <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
     <div class="w3-row w3-padding-32">
       <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Jerusalem, IL<br>
+        <i class="fas fa-map-marker-alt" style="width:30px"></i> Jerusalem, IL<br>
         <i class="fa fa-phone" style="width:30px"></i> Phone: +972 509863972<br>
         <i class="fa fa-envelope" style="width:30px"></i> Email: meatisamazing@gmail.com<br>
       </div>
@@ -166,72 +220,27 @@
             </div>
           </div>
           <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-white w3-section w3-right" type="submit">SEND</button>
+          <button class="w3-button w3-black w3-section w3-right" type="submit" onclick="alert('Thank you! Your comment has been submited.')">SEND</button>
         </form>
       </div>
     </div>
   </div>
-  </div>
-
-
-<!-- Gallery Content -->
-  <div class="w3-container" id="gallery">
-    <h3>Our Hotels</h3>
-    <h6>You can find our hotels anywhere in the world:</h6>
-  </div>
-  
-  <div class="w3-row-padding w3-padding-16 w3-text-white w3-large">
-    <div class="w3-half w3-margin-bottom">
-      <div class="w3-display-container">
-        <img src="img1.jpg" alt="Cinque Terre" style="width:100%">
-        <span class="w3-display-bottomleft w3-padding">Cinque Terre</span>
-      </div>
-    </div>
-    <div class="w3-half">
-      <div class="w3-row-padding" style="margin:0 -16px">
-        <div class="w3-half w3-margin-bottom">
-          <div class="w3-display-container">
-            <img src="img2.jpg" alt="New York" style="width:100%">
-            <span class="w3-display-bottomleft w3-padding">New York</span>
-          </div>
-        </div>
-        <div class="w3-half w3-margin-bottom">
-          <div class="w3-display-container">
-            <img src="img3.jpg" alt="San Francisco" style="width:100%">
-            <span class="w3-display-bottomleft w3-padding">San Francisco</span>
-          </div>
-        </div>
-      </div>
-      <div class="w3-row-padding" style="margin:0 -16px">
-        <div class="w3-half w3-margin-bottom">
-          <div class="w3-display-container">
-            <img src="/w3images/pisa.jpg" alt="Pisa" style="width:100%">
-            <span class="w3-display-bottomleft w3-padding">Pisa</span>
-          </div>
-        </div>
-        <div class="w3-half w3-margin-bottom">
-          <div class="w3-display-container">
-            <img src="/w3images/paris.jpg" alt="Paris" style="width:100%">
-            <span class="w3-display-bottomleft w3-padding">Paris</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
 
   
 <!-- End Page Content -->
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-<a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a><br>
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
+<footer class="w3-container w3-padding-64 w3-center w3-text-teal w3-xlarge">
+<br>
+<a href="#home" class="w3-button w3-hover-black"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a><br>
+  <i class="fab fa-facebook w3-hover-opacity"></i>
+  <i class="fab fa-instagram w3-hover-opacity"></i>
+  <i class="fab fa-snapchat w3-hover-opacity"></i>
+  <i class="fab fa-twitter w3-hover-opacity"></i>
+  <i class="fab fa-pinterest w3-hover-opacity"></i>
+  <i class="fab fa-linkedin w3-hover-opacity"></i>
   <p class="w3-medium">Yonatan Alterman </p>
 </footer>
 
@@ -239,41 +248,6 @@
 
 
 
-<script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000);    
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
 
 
 </body>
