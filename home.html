@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>MEAT IS AMAZING</title>
+	<title>JUST MEAT</title>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -135,7 +135,7 @@
 <div id="orderingModal" class="w3-modal">
   <div class="w3-modal-content w3-animate-zoom">
     <div class="w3-container w3-black">
-      <span onclick="document.getElementById('orderingModal').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <span onclick="document.getElementById('orderingModal').style.display='none'" class="w3-button w3-black w3-xlarge w3-display-topright">&times;</span>
       <h1><i class="fa fa-bookmark w3-margin-right"></i>Order</h1>
     </div>
     <div class="w3-container">
@@ -256,7 +256,7 @@ function myFunction() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
+var modal = document.getElementById('orderingModal');
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
